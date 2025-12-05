@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eden Smith | Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 3rem;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 1.5rem;
+    }
+
+    .name-block h1 {
+      font-size: 2rem;
+      letter-spacing: 0.03em;
+    }
+
+    .tagline {
+      font-size: 0.95rem;
+      color: #9ca3af;
+      margin-top: 0.25rem;
+    }
+
+    .links {
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      align-items: flex-start;
+    }
+
+    section { margin-bottom: 2rem; }
+
+    h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #9ca3af;
+      margin-bottom: 0.75rem;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: #111827;
+      border: 1px solid #1f2937;
+      font-size: 0.8rem;
+      margin-right: 0.35rem;
+      margin-bottom: 0.25rem;
+      color: #d1d5db;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (min-width: 720px) {
+      .grid-2 { grid-template-columns: 2fr 1.4fr; }
+      .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    .card {
+      background: #020617;
+      border-radius: 0.75rem;
+      border: 1px solid #111827;
+      padding: 1.1rem 1.15rem;
+      box-shadow: 0 18px 35px rgba(0,0,0,0.45);
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .card-subtitle {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+
+    .card ul {
+      margin-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+
+    .card ul li { margin-bottom: 0.25rem; }
+
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-bottom: 0.3rem;
+    }
+
+    .chip-row {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="name-block">
+        <h1>Eden Smith</h1>
+        <p class="tagline">Software Engineer · Full-Stack · Educational & AI-driven Systems</p>
+      </div>
+      <div class="links">
+        <span>📍 Atlanta, GA</span>
+        <a href="mailto:smitheden01@gmail.com">smitheden01@gmail.com</a>
+        <a href="https://www.linkedin.com/in/edensmith2025/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">GitHub</a>
+      </div>
+    </header>
+
+    <!-- SUMMARY -->
+    <section>
+      <h2>About</h2>
+      <p style="max-width: 650px; font-size: 0.95rem; color: #d1d5db;">
+        Software engineer with experience building full-stack systems, backend orchestration services,
+        and interactive educational tools. Skilled in Python, Java, TypeScript, React, and CI/automation
+        pipelines. Passionate about creating scalable, user-centric applications that blend AI,
+        performance optimization, and system reliability.
+      </p>
+    </section>
+
+    <!-- SKILLS + EDUCATION -->
+    <section class="grid grid-2">
+      <div>
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="card">
+          <div class="meta-row">
+            <span>Music Composer Tool</span>
+            <span>Java · Swing</span>
+          </div>
+          <p class="card-subtitle">
+            Desktop application for composing and editing music with staff-based notation and MIDI playback.
+          </p>
+          <ul>
+            <li>Built an interactive editor using Java Swing and an MVC architecture for clean separation of UI, logic, and playback.</li>
+            <li>Implemented custom staff rendering, note placement, and editing tools for composing melodies and harmonies.</li>
+            <li>Integrated MIDI playback controls so users can audibly preview compositions in real time.</li>
+          </ul>
+          <div class="chip-row">
+            <span class="pill">Java</span>
+            <span class="pill">Swing</span>
+            <span class="pill">MIDI</span>
+          </div>
+          <!-- Optional: add repo link -->
+          <!-- <a href="https://github.com/YOUR_GITHUB/composer" target="_blank">View on GitHub →</a> -->
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card" style="margin-top: 0.9rem;">
+          <div class="meta-row">
+            <span>Chorus Cruise</span>
+            <span>React · Speech Recognition</span>
+          </div>
+          <p class="card-subtitle">
+            Karaoke-style language-learning web app that gives real-time pronunciation feedback as users sing.
+          </p>
+          <ul>
+            <li>Developed a React front end with synchronized lyrics, progress indicators, and dynamic highlighting during playback.</li>
+            <li>Integrated a speech recognition API to compare live vocal input against expected phonemes and surface immediate feedback.</li>
+            <li>Implemented audio-timing logic to align lyric segments with both backing tracks and user input for a seamless karaoke experience.</li>
+          </ul>
+          <div class="chip-row">
+            <span class="pill">React</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Speech Recognition API</span>
+            <span class="pill">Web Audio</span>
+          </div>
+          <!-- <a href="https://github.com/YOUR_GITHUB/chorus-cruise" target="_blank">View on GitHub →</a> -->
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div>
+        <h2>Experience</h2>
+
+        <div class="card">
+          <h3>Software Engineer Intern · Udemy</h3>
+          <p class="card-subtitle">Education Technology · 05/2024 – 08/2024</p>
+          <ul>
+            <li>Built backend orchestration services and REST APIs for upload validation, state management, and automated error recovery.</li>
+            <li>Improved a video uploader with TypeScript and React, including automated tests and internal debugging tools.</li>
+            <li>Collaborated with multiple engineering teams to enhance performance monitoring and developer workflows.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top: 0.9rem;">
+          <h3>Courseware Course Contributor · Duke University</h3>
+          <p class="card-subtitle">Department of Computer Science · 01/2025 – 05/2025</p>
+          <ul>
+            <li>Developed clean, optimized Python solutions emphasizing correctness, readability, and operational clarity.</li>
+            <li>Built comprehensive PyTest suites, automated grading logic, and CI-friendly validation pipelines used by thousands of learners.</li>
+          </ul>
+        </div>
+
+        <h2 style="margin-top: 1.4rem;">Education</h2>
+        <div class="card">
+          <h3>Georgia Institute of Technology</h3>
+          <p class="card-subtitle">M.S. Computer Science · 08/2025 – 12/2026</p>
+          <p style="font-size: 0.85rem; color: #d1d5db;">
+            Focus: AI, User Interfaces, Health Informatics, Human–Computer Interaction.
+          </p>
+        </div>
+
+        <div class="card" style="margin-top: 0.8rem;">
+          <h3>Duke University</h3>
+          <p class="card-subtitle">B.A. Computational Media · 08/2021 – 05/2025</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="card">
+        <div class="chip-row">
+          <span class="pill">Python</span>
+          <span class="pill">Java</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">C</span>
+          <span class="pill">React</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">Testing & CI</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Eden Smith · Built with HTML &amp; CSS
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
